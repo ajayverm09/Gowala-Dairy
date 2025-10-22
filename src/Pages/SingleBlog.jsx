@@ -8,7 +8,7 @@ const SingleBlog = () => {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-orange-50 flex items-center justify-center">
+      <div className="min-h-screen mt-15 bg-gradient-to-br from-green-50 to-orange-50 flex items-center justify-center">
         <div className="text-center bg-white p-12 rounded-2xl shadow-xl">
           <h1 className="text-4xl font-bold text-[#7CBA30] mb-4">
             Blog Post Not Found
@@ -32,7 +32,7 @@ const SingleBlog = () => {
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-orange-50 py-12">
+    <div className="min-h-screen bg-gradient-to-br mt-15 from-green-50 to-orange-50 py-12">
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <nav className="mb-8">
@@ -48,7 +48,7 @@ const SingleBlog = () => {
             <li className="text-gray-400">/</li>
             <li>
               <Link
-                to="/blog"
+                to="/blogs"
                 className="bg-[#7CBA30] text-white hover:bg-white border border-[#7CBA30] hover:text-[#7CBA30] transition-colors"
               >
                 Blog
